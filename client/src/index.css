@@ -1,0 +1,163 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+
+}
+
+body {
+  background-color: #202B4E;
+  color: #eee;
+
+}
+
+.App {
+  padding: 32px;
+}
+h1 {
+  font-size: 40px;
+  font-weight: 700;
+  margin-bottom: 32px;
+}
+
+h4 {
+  font-size: 18px;
+  color: #ddd;
+  text-transform: uppercase;
+  font-weight: 400;
+  margin-bottom: 16px;
+
+}
+
+.todo {
+	position: relative;
+	background-color: #101026;
+	padding: 16px;
+	border-radius: 16px;
+	display: flex;
+	align-items: center;
+	transition: 0.5s;
+	cursor: pointer;
+	margin-bottom: 16px;
+}
+
+
+.todo:hover {
+	opacity: 0.8;
+}
+
+.todo .checkbox {
+	width: 20px;
+	height: 20px;
+	margin-right: 16px;
+	border-radius: 50%;
+	background-color: #202B4E;
+	background-image: linear-gradient(to bottom, transparent, transparent);
+	transition: 0.4s;
+}
+
+.todo.is-complete .checkbox {
+	background-color: #d81e5b;
+	background-image: linear-gradient(to bottom, #d81e5b, #8a4efc);
+}
+
+.todo .text {
+	font-size: 20px;
+}
+
+.todo.is-complete .text {
+	text-decoration: line-through;
+}
+
+.todo .delete-todo {
+	position: absolute;
+	top: 50%;
+	transform: translateY(-50%);
+	right: 16px;
+	color: #eee;
+	width: 24px;
+	height: 24px;
+	border-radius: 50%;
+	background-color: #AF1E2D;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	font-weight: 700;
+}
+
+.addPopup {
+	position: fixed;
+	bottom: 32px;
+	right: 32px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+
+	width: 64px;
+	height: 64px;
+	border-radius: 999px;
+	font-size: 28px;
+	font-weight: 900;
+	color: var(--light);
+	background-color: #d81e5b;
+	background-image: linear-gradient(to bottom right, #d81e5b, #8a4efc);
+	cursor: pointer;
+}
+
+.popup {
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+
+	width: 100%;
+	max-width: 400px;
+	background-color: #eee;
+	padding: 32px;
+	border-radius: 16px;
+	box-shadow: 0px 4px 32px #101026;
+}
+
+.closePopup {
+	position: absolute;
+	top: 16px;
+	right: 16px;
+	width: 20px;
+	height: 20px;
+	font-size: 20px;
+	color: #101026;
+	cursor: pointer;
+}
+
+.popup h3 {
+	color: #101026;
+	margin-bottom: 16px;
+	font-weight: 400;
+	text-transform: uppercase;
+}
+
+.add-todo-input {
+	appearance: none;
+	outline: none;
+	border: none;
+	background-color: #FFF;
+	padding: 16px;
+	border-radius: 16px;
+	width: 100%;
+	box-shadow: 0px 2px 24px rgba(0, 0, 0, 0.2);
+	font-size: 20px;
+}
+
+.button {
+	padding: 16px 32px;
+	border-radius: 999px;
+	background-image: linear-gradient(to right, #d81e5b, #8a4efc);
+	display: inline-block;
+	font-weight: 700;
+	text-transform: uppercase;
+	font-size: 18px;
+	margin-top: 16px;
+	text-align: center;
+	cursor: pointer;
+}
