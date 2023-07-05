@@ -6,7 +6,7 @@ This to-do list lets you to add your tasks, mark them complete or incomplete, an
 - Download all the files from the repository
 - Open the parent folder in the terminal
 - Get your MongoDB Connection Key. 
-- Create a file named '.env' in the parent folder, and initialize the connection key as a string with a variable named 'REACT_APP_KEY' 
+- Create a file named '.env' in the api folder, and initialize the connection key as a string with a variable named 'REACT_APP_KEY' 
 - Enter the following commands: 
 ```bash
   cd api
